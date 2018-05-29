@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link href="Login.php" type="text/php">
+    <link href="Main.css" rel="stylesheet" type="text/css">
+</html>
+<body>
+    <h1>
+        Game Statsitics Database
+    </h1>
+    <center>
+        <form method="post" action="Main.php">
+           <!-- <input type="text" placeholder="Match Index" name="MatchIndex">!-->
+            <input type="text" placeholder="First Name" name="firstname">
+            <input type="text" placeholder="Last Name" name="lastname">
+            <input tpye="text" placeholder="Name of Sport/Game" name="Nameofgame">
+            <input type="text" placeholder="Team 1" name="Team1">
+            <input type="text" placeholder="Team 2" name="Team2">
+            <input type="text" placeholder="Victor" name="Victor">
+            <input type="text" placeholder="Enter score eg. (2-1)" name="Score">
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+        </form>
+        <img src="https://cdn.pixabay.com/photo/2015/06/07/23/48/football-801047_960_720.jpg" border="0px" width="400px" height="235px">
+        <img src="https://c1.staticflickr.com/2/1660/26576799231_d8fdf95f29_b.jpg" broder="0px" width="400px" height="235px">
+        <!--searches for the data with the given index-->
+        <h4>Search for Data with index</h4>
+        <form action= 'read.php' method = 'post'>
+            <input tpye="text" placeholder="Search Match Index" name="MatchIndex">
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+        </form>
+        <!--deletes the data with the given index-->
+        <h4>Delete data with index</h4>
+        <form action= 'delete.php' method='post'>
+            <input type="text" placeholder= 'Search Match Index' name='MatchIndex'>
+            <input name = 'read' tpye = 'submit' value = 'Find Info'>
+        </form>
+    </center>
+</body>
